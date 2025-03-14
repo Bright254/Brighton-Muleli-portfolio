@@ -61,7 +61,6 @@ const Contact = () => {
           <ContactInfoItem 
             icon={<Mail className="h-6 w-6" />}
             title="Email"
-            title="Email"
             content="design@example.com"
           />
           <ContactInfoItem 

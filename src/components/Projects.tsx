@@ -4,29 +4,53 @@ import { ArrowRight, ExternalLink } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-// Mock project data focused on graphic design
+// Project data focused on graphic design
 const projects = [
   {
     id: 1,
-    title: "Brand Identity - Artisan Bakery",
-    description: "Complete brand identity design for an artisan bakery, including logo, color palette, typography, packaging, and brand guidelines.",
-    tags: ["Branding", "Logo Design", "Packaging"],
+    title: "Evergreen | Sustainable Cosmetics Branding",
+    description: "Complete brand identity and packaging design for an eco-friendly cosmetics line, emphasizing sustainable materials and natural aesthetics.",
+    tags: ["Branding", "Packaging", "Typography"],
     image: "/placeholder.svg",
     liveUrl: "#",
   },
   {
     id: 2,
-    title: "Product Packaging - Organic Skincare",
-    description: "Sustainable packaging design for an organic skincare brand, focusing on eco-friendly materials and vibrant visuals that communicate product benefits.",
-    tags: ["Packaging", "Illustration", "Print Design"],
+    title: "Pulse Annual Report Design",
+    description: "Editorial design for a tech company's annual report, featuring custom infographics, data visualization, and photography direction.",
+    tags: ["Editorial", "Print", "Infographics"],
     image: "/placeholder.svg",
     liveUrl: "#",
   },
   {
     id: 3,
-    title: "Print & Digital Campaign - Fashion Brand",
-    description: "Cohesive visual campaign spanning print materials, social media, and digital ads for a seasonal fashion collection launch.",
+    title: "Harvest Market Brand Identity",
+    description: "Brand identity system for a local farmers market, including logo design, color palette, signage, and promotional materials.",
+    tags: ["Branding", "Logo Design", "Print"],
+    image: "/placeholder.svg",
+    liveUrl: "#",
+  },
+  {
+    id: 4,
+    title: "Nomad Coffee Packaging",
+    description: "Distinctive packaging design for a specialty coffee roaster, featuring hand-drawn illustrations and typography that tells the coffee's origin story.",
+    tags: ["Packaging", "Illustration", "Typography"],
+    image: "/placeholder.svg",
+    liveUrl: "#",
+  },
+  {
+    id: 5,
+    title: "Rhythm Music Festival Campaign",
+    description: "Visual campaign for an annual music festival spanning posters, digital ads, merchandise, and stage design with a cohesive visual language.",
     tags: ["Campaign", "Print", "Digital Design"],
+    image: "/placeholder.svg",
+    liveUrl: "#",
+  },
+  {
+    id: 6,
+    title: "Lumen Photography Portfolio",
+    description: "Design and layout for a photographer's print portfolio and lookbook, emphasizing elegant typography and thoughtful image sequencing.",
+    tags: ["Editorial", "Print", "Typography"],
     image: "/placeholder.svg",
     liveUrl: "#",
   },
@@ -92,10 +116,10 @@ const Projects = () => {
     <section id="projects" className="bg-[#F5F5F5]">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="section-title-tag">My Work</span>
-          <h2 className="heading-lg mb-4">Featured Design Projects</h2>
+          <span className="section-title-tag">Portfolio</span>
+          <h2 className="heading-lg mb-4">Featured Design Work</h2>
           <p className="paragraph">
-            A selection of my recent graphic design work across various industries and mediums. Each project represents a unique challenge and creative solution.
+            A selection of my most impactful graphic design projects spanning brand identity, packaging, editorial, and print design.
           </p>
         </div>
         
@@ -107,7 +131,7 @@ const Projects = () => {
         
         <div className="mt-16 text-center">
           <Button variant="outline" size="lg" className="group">
-            View All Projects
+            Full Portfolio
             <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </Button>
         </div>

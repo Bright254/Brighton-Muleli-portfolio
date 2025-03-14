@@ -16,10 +16,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 items-center">
           <div>
             <a href="#home" className="text-2xl font-bold">
-              <span className="text-primary">Jane Doe</span>
+              <span className="text-primary">Alex Morgan</span>
             </a>
             <p className="mt-2 text-white/80 max-w-md">
-              Graphic designer creating beautiful, meaningful visual experiences that connect with your audience.
+              Creating thoughtful, strategic, and visually impactful design solutions for brands that want to make a lasting impression.
             </p>
           </div>
           
@@ -43,7 +43,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm text-white/70">
-            &copy; {currentYear} Jane Doe. All rights reserved.
+            &copy; {currentYear} Alex Morgan. Graphic Designer.
           </p>
           
           <div className="mt-4 sm:mt-0">

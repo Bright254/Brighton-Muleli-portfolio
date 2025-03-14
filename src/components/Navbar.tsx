@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { title: 'Home', href: '#home' },
   { title: 'About', href: '#about' },
-  { title: 'Projects', href: '#projects' },
+  { title: 'Portfolio', href: '#projects' },
   { title: 'Contact', href: '#contact' }
 ];
 
@@ -40,7 +40,7 @@ const Navbar = () => {
           className="text-2xl font-bold transition-all hover:scale-105 duration-300"
           aria-label="Logo"
         >
-          <span className="text-primary">Jane Doe</span>
+          <span className="text-primary">Alex Morgan</span>
         </a>
 
         <nav className="hidden md:block">
