@@ -19,7 +19,9 @@ const Index = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate-slide-up');
-          entry.target.style.opacity = '1';
+          if (entry.target instanceof HTMLElement) {
+            entry.target.style.opacity = '1';
+          }
           observer.unobserve(entry.target);
         }
       });
@@ -28,7 +30,9 @@ const Index = () => {
     // Select elements to animate
     document.querySelectorAll('.animate-on-scroll').forEach((el) => {
       el.classList.remove('animate-slide-up');
-      el.style.opacity = '0';
+      if (el instanceof HTMLElement) {
+        el.style.opacity = '0';
+      }
       observer.observe(el);
     });
 
