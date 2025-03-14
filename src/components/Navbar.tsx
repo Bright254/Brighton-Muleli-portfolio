@@ -31,7 +31,7 @@ const Navbar = () => {
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 ease-in-out py-4 px-6",
-        scrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+        scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -40,7 +40,7 @@ const Navbar = () => {
           className="text-2xl font-bold transition-all hover:scale-105 duration-300"
           aria-label="Logo"
         >
-          Portfolio
+          <span className="text-primary">Jane Doe</span>
         </a>
 
         <nav className="hidden md:block">
@@ -49,7 +49,7 @@ const Navbar = () => {
               <li key={link.title}>
                 <a
                   href={link.href}
-                  className="text-foreground/80 hover:text-foreground font-medium transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300"
+                  className="text-foreground/80 hover:text-primary font-medium transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300"
                 >
                   {link.title}
                 </a>
@@ -59,9 +59,9 @@ const Navbar = () => {
         </nav>
         
         <Button
-          variant="ghost"
+          variant="outline"
           size="sm"
-          className="hidden md:inline-flex"
+          className="hidden md:inline-flex border-primary text-primary hover:bg-primary hover:text-white"
           asChild
         >
           <a href="#contact">Get In Touch</a>
@@ -89,7 +89,7 @@ const Navbar = () => {
               <li key={link.title}>
                 <a
                   href={link.href}
-                  className="text-xl font-medium"
+                  className="text-xl font-medium hover:text-primary"
                   onClick={closeMenu}
                 >
                   {link.title}
@@ -98,7 +98,7 @@ const Navbar = () => {
             ))}
           </ul>
           <Button
-            className="mt-10"
+            className="mt-10 bg-primary hover:bg-primary/90"
             asChild
           >
             <a href="#contact" onClick={closeMenu}>Get In Touch</a>

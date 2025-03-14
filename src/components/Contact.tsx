@@ -11,8 +11,8 @@ interface ContactInfoItemProps {
 }
 
 const ContactInfoItem = ({ icon, title, content }: ContactInfoItemProps) => (
-  <div className="flex flex-col items-center text-center p-6 rounded-lg bg-white shadow-sm border border-border/50 transition-all duration-300 hover:shadow-md">
-    <div className="h-12 w-12 flex items-center justify-center rounded-full bg-primary/5 text-primary mb-4">
+  <div className="flex flex-col items-center text-center p-6 rounded-lg bg-white shadow-sm border border-border/50 transition-all duration-300 hover:shadow-md hover:border-primary/20">
+    <div className="h-12 w-12 flex items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
       {icon}
     </div>
     <h3 className="text-lg font-medium mb-2">{title}</h3>
@@ -46,13 +46,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-secondary/30">
+    <section id="contact" className="bg-white">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="section-title-tag">Contact</span>
           <h2 className="heading-lg mb-4">Get In Touch</h2>
           <p className="paragraph">
-            I'd love to hear from you. Whether you have a question, proposal, or just want to say hello.
+            I'd love to discuss your project or answer any questions. Drop me a message, and I'll get back to you as soon as possible.
           </p>
         </div>
         
@@ -60,7 +60,7 @@ const Contact = () => {
           <ContactInfoItem 
             icon={<Mail className="h-6 w-6" />}
             title="Email"
-            content="hello@example.com"
+            content="design@example.com"
           />
           <ContactInfoItem 
             icon={<Phone className="h-6 w-6" />}
@@ -75,7 +75,7 @@ const Contact = () => {
         </div>
         
         <div className="max-w-3xl mx-auto">
-          <form onSubmit={handleSubmit} className="p-8 rounded-lg bg-white shadow-sm border border-border/50">
+          <form onSubmit={handleSubmit} className="p-8 rounded-lg bg-[#F5F5F5] shadow-sm border border-border/50">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
@@ -117,7 +117,7 @@ const Contact = () => {
                 placeholder="Your message"
               ></textarea>
             </div>
-            <Button type="submit" className="w-full" disabled={isSubmitting}>
+            <Button type="submit" className="w-full bg-primary hover:bg-primary/90" disabled={isSubmitting}>
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </Button>
           </form>

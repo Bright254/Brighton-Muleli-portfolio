@@ -11,7 +11,7 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
+    --primary: 25 95% 53%;
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -23,8 +23,8 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 240 5.9% 10%;
-    --radius: 0.75rem;
+    --ring: 25 95% 53%;
+    --radius: 0.5rem;
   }
 
   * {
@@ -75,6 +75,6 @@
   }
   
   .section-title-tag {
-    @apply text-sm font-medium px-3 py-1 rounded-full bg-primary/5 text-primary inline-block mb-4;
+    @apply text-sm font-medium px-3 py-1 rounded-full bg-primary/10 text-primary inline-block mb-4;
   }
 }
