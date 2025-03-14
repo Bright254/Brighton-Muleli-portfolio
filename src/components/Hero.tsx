@@ -12,17 +12,17 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <span className="section-title-tag animate-fade-in">Graphic Designer</span>
           <h1 className="heading-xl mb-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            <span className="text-primary">Jane Doe</span> - Crafting Visual Stories with Passion
+            <span className="text-primary">Jane Doe</span> - Creating Visual Identities & Brand Stories
           </h1>
           <p className="paragraph max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            I'm a graphic designer focused on creating beautiful, meaningful, and user-centered visual experiences that connect with your audience.
+            I specialize in branding, print design, and digital graphics that help businesses communicate their unique story and connect with their audience.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: "0.3s" }}>
             <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-              <a href="#projects">View My Portfolio</a>
+              <a href="#projects">View My Work</a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="#contact">Let's Connect</a>
+              <a href="#contact">Start a Project</a>
             </Button>
           </div>
         </div>

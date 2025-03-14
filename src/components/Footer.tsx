@@ -1,10 +1,10 @@
 
-import { Instagram, Dribbble, Behance } from 'lucide-react';
+import { Instagram, Dribbble, ExternalLink } from 'lucide-react';
 
 const socialLinks = [
   { icon: <Instagram className="h-5 w-5" />, url: "#", label: "Instagram" },
   { icon: <Dribbble className="h-5 w-5" />, url: "#", label: "Dribbble" },
-  { icon: <Behance className="h-5 w-5" />, url: "#", label: "Behance" }
+  { icon: <ExternalLink className="h-5 w-5" />, url: "#", label: "Behance" }
 ];
 
 const Footer = () => {

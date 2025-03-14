@@ -6,14 +6,14 @@ interface SkillProps {
 }
 
 const skills = [
-  "Branding & Identity",
-  "UI/UX Design",
+  "Brand Identity Design",
   "Logo Design",
   "Print Design",
   "Typography",
   "Illustration",
   "Social Media Graphics",
-  "Motion Graphics"
+  "Packaging Design",
+  "Marketing Collateral"
 ];
 
 const Skill = ({ name }: SkillProps) => (
@@ -42,12 +42,12 @@ const About = () => {
           {/* Content column */}
           <div className="w-full lg:w-1/2">
             <span className="section-title-tag">About Me</span>
-            <h2 className="heading-lg mb-6">Creating Visual Stories That Connect & Inspire</h2>
+            <h2 className="heading-lg mb-6">Crafting Visual Stories That Leave a Lasting Impression</h2>
             <p className="paragraph mb-6">
-              I'm a passionate graphic designer with a keen eye for detail and a love for creating impactful visual stories. My approach combines creativity with strategic thinking to build designs that are both beautiful and effective.
+              I'm a passionate graphic designer with over 5 years of experience creating impactful visual identities and brand materials. My approach combines creative design thinking with strategic brand development to create designs that are both visually stunning and effective.
             </p>
             <p className="paragraph mb-10">
-              With experience across various industries, I bring a unique perspective to each project, ensuring that every design meets the highest standards of quality and achieves its communication goals.
+              Working with clients across various industries, from startups to established businesses, I bring a unique perspective to each project and ensure every design meets the highest standards while achieving your communication goals.
             </p>
             
             <div className="grid grid-cols-2 gap-x-10 gap-y-2 mb-8">

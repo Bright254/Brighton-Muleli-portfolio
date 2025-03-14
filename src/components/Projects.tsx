@@ -4,29 +4,29 @@ import { ArrowRight, ExternalLink } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-// Mock project data
+// Mock project data focused on graphic design
 const projects = [
   {
     id: 1,
-    title: "Brand Identity - Coffee Shop",
-    description: "Complete brand identity design for an artisan coffee shop, including logo, color palette, typography, and brand guidelines.",
-    tags: ["Branding", "Logo Design", "Typography"],
+    title: "Brand Identity - Artisan Bakery",
+    description: "Complete brand identity design for an artisan bakery, including logo, color palette, typography, packaging, and brand guidelines.",
+    tags: ["Branding", "Logo Design", "Packaging"],
     image: "/placeholder.svg",
     liveUrl: "#",
   },
   {
     id: 2,
-    title: "Packaging Design - Organic Products",
-    description: "Sustainable packaging design for an organic skincare brand, focusing on eco-friendly materials and vibrant visuals.",
+    title: "Product Packaging - Organic Skincare",
+    description: "Sustainable packaging design for an organic skincare brand, focusing on eco-friendly materials and vibrant visuals that communicate product benefits.",
     tags: ["Packaging", "Illustration", "Print Design"],
     image: "/placeholder.svg",
     liveUrl: "#",
   },
   {
     id: 3,
-    title: "Social Media Campaign - Fashion Brand",
-    description: "Cohesive social media graphics and templates for a seasonal fashion campaign, boosting engagement by 45%.",
-    tags: ["Social Media", "Digital Design", "Campaign"],
+    title: "Print & Digital Campaign - Fashion Brand",
+    description: "Cohesive visual campaign spanning print materials, social media, and digital ads for a seasonal fashion collection launch.",
+    tags: ["Campaign", "Print", "Digital Design"],
     image: "/placeholder.svg",
     liveUrl: "#",
   },
@@ -93,9 +93,9 @@ const Projects = () => {
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="section-title-tag">My Work</span>
-          <h2 className="heading-lg mb-4">Featured Projects</h2>
+          <h2 className="heading-lg mb-4">Featured Design Projects</h2>
           <p className="paragraph">
-            A selection of my recent design work across various industries and mediums. Each project represents a unique challenge and creative solution.
+            A selection of my recent graphic design work across various industries and mediums. Each project represents a unique challenge and creative solution.
           </p>
         </div>
         

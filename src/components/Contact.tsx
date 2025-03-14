@@ -24,11 +24,12 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    projectType: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
@@ -40,7 +41,7 @@ const Contact = () => {
     // Simulate form submission
     setTimeout(() => {
       toast.success('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', email: '', projectType: '', message: '' });
       setIsSubmitting(false);
     }, 1500);
   };
@@ -50,15 +51,16 @@ const Contact = () => {
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="section-title-tag">Contact</span>
-          <h2 className="heading-lg mb-4">Get In Touch</h2>
+          <h2 className="heading-lg mb-4">Start Your Design Project</h2>
           <p className="paragraph">
-            I'd love to discuss your project or answer any questions. Drop me a message, and I'll get back to you as soon as possible.
+            Ready to elevate your brand with professional graphic design? Let's discuss your project needs and create something amazing together.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           <ContactInfoItem 
             icon={<Mail className="h-6 w-6" />}
+            title="Email"
             title="Email"
             content="design@example.com"
           />
@@ -105,7 +107,26 @@ const Contact = () => {
               </div>
             </div>
             <div className="mb-6">
-              <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
+              <label htmlFor="projectType" className="block text-sm font-medium mb-2">Project Type</label>
+              <select
+                id="projectType"
+                name="projectType"
+                required
+                value={formData.projectType}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+              >
+                <option value="">Select a project type</option>
+                <option value="branding">Brand Identity</option>
+                <option value="logo">Logo Design</option>
+                <option value="print">Print Design</option>
+                <option value="packaging">Packaging</option>
+                <option value="social">Social Media Graphics</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div className="mb-6">
+              <label htmlFor="message" className="block text-sm font-medium mb-2">Project Details</label>
               <textarea
                 id="message"
                 name="message"
@@ -114,11 +135,11 @@ const Contact = () => {
                 onChange={handleChange}
                 rows={5}
                 className="w-full px-4 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all resize-none"
-                placeholder="Your message"
+                placeholder="Tell me about your project and design needs"
               ></textarea>
             </div>
             <Button type="submit" className="w-full bg-primary hover:bg-primary/90" disabled={isSubmitting}>
-              {isSubmitting ? 'Sending...' : 'Send Message'}
+              {isSubmitting ? 'Sending...' : 'Request a Quote'}
             </Button>
           </form>
         </div>
