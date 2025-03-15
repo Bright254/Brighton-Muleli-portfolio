@@ -1,10 +1,43 @@
 
-import { Instagram, Dribbble, ExternalLink } from 'lucide-react';
+import { Instagram, Linkedin } from 'lucide-react';
+
+// Custom Behance icon since it's not available in lucide-react
+const BehanceIcon = () => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width="24" 
+    height="24" 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round"
+    className="h-5 w-5"
+  >
+    <path d="M8 9h5.5a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5H8" />
+    <path d="M8 15h6.5a2.5 2.5 0 0 0 2.5-2.5v0a2.5 2.5 0 0 0-2.5-2.5H8" />
+    <path d="M16 6h.01" />
+    <path d="M12 4H8a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4h-4Z" />
+  </svg>
+);
 
 const socialLinks = [
-  { icon: <Instagram className="h-5 w-5" />, url: "#", label: "Instagram" },
-  { icon: <Dribbble className="h-5 w-5" />, url: "#", label: "Dribbble" },
-  { icon: <ExternalLink className="h-5 w-5" />, url: "#", label: "Behance" }
+  { 
+    icon: <BehanceIcon />, 
+    url: "https://www.behance.net/Brighton_Muleli", 
+    label: "Behance"
+  },
+  { 
+    icon: <Linkedin className="h-5 w-5" />, 
+    url: "https://www.linkedin.com/in/brighton-muleli-456b04284", 
+    label: "LinkedIn" 
+  },
+  { 
+    icon: <Instagram className="h-5 w-5" />, 
+    url: "https://www.instagram.com/m.y.r.i.a.d_b.r.i.g.h.t/", 
+    label: "Instagram" 
+  }
 ];
 
 const Footer = () => {
