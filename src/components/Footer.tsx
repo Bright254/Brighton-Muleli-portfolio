@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 items-center">
           <div>
             <a href="#home" className="text-2xl font-bold">
-              <span className="text-primary">Alex Morgan</span>
+              <span className="text-primary">Brighton Muleli</span>
             </a>
             <p className="mt-2 text-white/80 max-w-md">
               Creating thoughtful, strategic, and visually impactful design solutions for brands that want to make a lasting impression.
@@ -43,7 +43,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm text-white/70">
-            &copy; {currentYear} Alex Morgan. Graphic Designer.
+            &copy; {currentYear} Brighton Muleli. Graphic Designer.
           </p>
           
           <div className="mt-4 sm:mt-0">

@@ -40,7 +40,7 @@ const Navbar = () => {
           className="text-2xl font-bold transition-all hover:scale-105 duration-300"
           aria-label="Logo"
         >
-          <span className="text-primary">Alex Morgan</span>
+          <span className="text-primary">Brighton Muleli</span>
         </a>
 
         <nav className="hidden md:block">

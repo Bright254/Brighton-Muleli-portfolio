@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <span className="section-title-tag animate-fade-in">Graphic Designer</span>
           <h1 className="heading-xl mb-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            <span className="text-primary">Alex Morgan</span> - Creative Graphic Designer
+            <span className="text-primary">Brighton Muleli</span> - Creative Graphic Designer
           </h1>
           <p className="paragraph max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: "0.2s" }}>
             Transforming ideas into compelling visual narratives through strategic design, typography, and artful composition.

@@ -1,4 +1,3 @@
-
 import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -38,7 +37,7 @@ const About = () => {
                 <div className="w-full h-full bg-[radial-gradient(#000_1px,transparent_1px)]" style={{ backgroundSize: "20px 20px" }}></div>
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-7xl font-bold text-primary/20">AM</span>
+                <span className="text-7xl font-bold text-primary/20">BM</span>
               </div>
             </div>
           </div>
@@ -48,7 +47,7 @@ const About = () => {
             <span className="section-title-tag">About Me</span>
             <h2 className="heading-lg mb-6">Designing Visuals That Communicate & Connect</h2>
             <p className="paragraph mb-6">
-              I'm Alex Morgan, a passionate graphic designer with 7+ years of experience crafting visual identities and design solutions that help brands stand out in today's crowded marketplace.
+              I'm Brighton Muleli, a passionate graphic designer with 7+ years of experience crafting visual identities and design solutions that help brands stand out in today's crowded marketplace.
             </p>
             <p className="paragraph mb-10">
               My design approach combines strategic thinking with creative execution, focusing on creating purposeful visuals that communicate effectively while delighting viewers with thoughtful aesthetics.
