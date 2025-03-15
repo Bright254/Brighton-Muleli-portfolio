@@ -4,54 +4,48 @@ import { ArrowRight, ExternalLink } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-// Project data focused on graphic design
+// Project data with uploaded designs
 const projects = [
   {
     id: 1,
-    title: "Evergreen | Sustainable Cosmetics Branding",
-    description: "Complete brand identity and packaging design for an eco-friendly cosmetics line, emphasizing sustainable materials and natural aesthetics.",
-    tags: ["Branding", "Packaging", "Typography"],
-    image: "/placeholder.svg",
+    title: "Bright Blends Logo Design",
+    tags: ["Branding", "Logo Design"],
+    image: "/lovable-uploads/8e52f3ef-8381-4bec-8809-3f7df13ae6f1.png",
     liveUrl: "#",
   },
   {
     id: 2,
-    title: "Pulse Annual Report Design",
-    description: "Editorial design for a tech company's annual report, featuring custom infographics, data visualization, and photography direction.",
-    tags: ["Editorial", "Print", "Infographics"],
-    image: "/placeholder.svg",
+    title: "Bright Blends Wine Glass Logo",
+    tags: ["Branding", "Logo Design"],
+    image: "/lovable-uploads/32262651-c3ba-4a8a-99a9-61f18582aac0.png",
     liveUrl: "#",
   },
   {
     id: 3,
-    title: "Harvest Market Brand Identity",
-    description: "Brand identity system for a local farmers market, including logo design, color palette, signage, and promotional materials.",
-    tags: ["Branding", "Logo Design", "Print"],
-    image: "/placeholder.svg",
+    title: "Fruit Punch Product Poster",
+    tags: ["Product Design", "Print"],
+    image: "/lovable-uploads/5d98eea0-5d06-4959-905e-bb65d4806011.png",
     liveUrl: "#",
   },
   {
     id: 4,
-    title: "Nomad Coffee Packaging",
-    description: "Distinctive packaging design for a specialty coffee roaster, featuring hand-drawn illustrations and typography that tells the coffee's origin story.",
-    tags: ["Packaging", "Illustration", "Typography"],
-    image: "/placeholder.svg",
+    title: "Lushy Henna Classes Poster",
+    tags: ["Poster Design", "Event Promotion"],
+    image: "/lovable-uploads/9efc0a4e-c3f7-4bce-81f2-f62412e1f28d.png",
     liveUrl: "#",
   },
   {
     id: 5,
-    title: "Rhythm Music Festival Campaign",
-    description: "Visual campaign for an annual music festival spanning posters, digital ads, merchandise, and stage design with a cohesive visual language.",
-    tags: ["Campaign", "Print", "Digital Design"],
-    image: "/placeholder.svg",
+    title: "Yemimar's Thrift Heaven Poster",
+    tags: ["Fashion", "Promotional Design"],
+    image: "/lovable-uploads/b5f3b130-8d1b-4750-845b-515d46658e6b.png",
     liveUrl: "#",
   },
   {
     id: 6,
-    title: "Lumen Photography Portfolio",
-    description: "Design and layout for a photographer's print portfolio and lookbook, emphasizing elegant typography and thoughtful image sequencing.",
-    tags: ["Editorial", "Print", "Typography"],
-    image: "/placeholder.svg",
+    title: "Spartan Car Logo Design",
+    tags: ["Branding", "Logo Design"],
+    image: "/lovable-uploads/a3067e14-2a6d-4bf2-b114-b6be1e9cecbb.png",
     liveUrl: "#",
   },
 ];
@@ -84,9 +78,6 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
         <h3 className="heading-sm mb-2 group-hover:text-primary transition-colors duration-300">
           {project.title}
         </h3>
-        <p className="text-muted-foreground mb-4">
-          {project.description}
-        </p>
         
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-6">
@@ -119,7 +110,7 @@ const Projects = () => {
           <span className="section-title-tag">Portfolio</span>
           <h2 className="heading-lg mb-4">Featured Design Work</h2>
           <p className="paragraph">
-            A selection of my most impactful graphic design projects spanning brand identity, packaging, editorial, and print design.
+            A showcase of my graphic design projects spanning branding, promotional materials, and print design.
           </p>
         </div>
         
