@@ -1,3 +1,4 @@
+
 import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -9,11 +10,11 @@ const skills = [
   "Brand Identity Design",
   "Logo Design",
   "Typography",
-  "Print & Editorial",
-  "Packaging Design",
-  "Social Media Graphics",
-  "Illustration",
-  "Adobe Creative Suite"
+  "HTML",
+  "Figma",
+  "Inkscape",
+  "Creativity",
+  "Communication"
 ];
 
 const Skill = ({ name }: SkillProps) => (
@@ -30,15 +31,12 @@ const About = () => {
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           {/* Image column */}
           <div className="w-full lg:w-1/2 relative">
-            <div className="w-full aspect-square bg-[#F5F5F5] rounded-lg overflow-hidden relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10"></div>
-              {/* Pattern overlay */}
-              <div className="absolute inset-0 opacity-5">
-                <div className="w-full h-full bg-[radial-gradient(#000_1px,transparent_1px)]" style={{ backgroundSize: "20px 20px" }}></div>
-              </div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-7xl font-bold text-primary/20">BM</span>
-              </div>
+            <div className="w-full aspect-square rounded-lg overflow-hidden relative">
+              <img 
+                src="/lovable-uploads/e387a111-cab0-4984-bba3-25cb18bc8346.png" 
+                alt="Brighton Muleli" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           
@@ -47,7 +45,7 @@ const About = () => {
             <span className="section-title-tag">About Me</span>
             <h2 className="heading-lg mb-6">Designing Visuals That Communicate & Connect</h2>
             <p className="paragraph mb-6">
-              I'm Brighton Muleli, a passionate graphic designer with 7+ years of experience crafting visual identities and design solutions that help brands stand out in today's crowded marketplace.
+              I'm Brighton Muleli, a passionate graphic designer with 1 year of experience crafting visual identities and design solutions that help brands stand out in today's crowded marketplace.
             </p>
             <p className="paragraph mb-10">
               My design approach combines strategic thinking with creative execution, focusing on creating purposeful visuals that communicate effectively while delighting viewers with thoughtful aesthetics.
