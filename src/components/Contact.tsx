@@ -61,17 +61,17 @@ const Contact = () => {
           <ContactInfoItem 
             icon={<Mail className="h-6 w-6" />}
             title="Email"
-            content="design@example.com"
+            content="brightmuleli945@gmail.com"
           />
           <ContactInfoItem 
             icon={<Phone className="h-6 w-6" />}
             title="Phone"
-            content="+1 (555) 123-4567"
+            content="+254792431790"
           />
           <ContactInfoItem 
             icon={<MapPin className="h-6 w-6" />}
             title="Location"
-            content="San Francisco, CA"
+            content="Nairobi, Kenya"
           />
         </div>
         
