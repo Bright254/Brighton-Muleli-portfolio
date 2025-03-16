@@ -35,7 +35,7 @@ const About = () => {
               <img 
                 src="/lovable-uploads/e387a111-cab0-4984-bba3-25cb18bc8346.png" 
                 alt="Brighton Muleli" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain" 
               />
             </div>
           </div>

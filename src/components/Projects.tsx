@@ -1,7 +1,6 @@
 
 import { useState } from 'react';
-import { ArrowRight, ExternalLink } from 'lucide-react';
-import { Button } from "@/components/ui/button";
+import { ExternalLink } from 'lucide-react';
 import { cn } from "@/lib/utils";
 
 // Project data with uploaded designs
@@ -118,13 +117,6 @@ const Projects = () => {
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
-        </div>
-        
-        <div className="mt-16 text-center">
-          <Button variant="outline" size="lg" className="group">
-            Full Portfolio
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-          </Button>
         </div>
       </div>
     </section>

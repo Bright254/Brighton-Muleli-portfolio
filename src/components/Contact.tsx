@@ -118,9 +118,6 @@ const Contact = () => {
                 <option value="">Select a project type</option>
                 <option value="branding">Brand Identity</option>
                 <option value="logo">Logo Design</option>
-                <option value="print">Print Design</option>
-                <option value="packaging">Packaging</option>
-                <option value="social">Social Media Graphics</option>
                 <option value="other">Other</option>
               </select>
             </div>
