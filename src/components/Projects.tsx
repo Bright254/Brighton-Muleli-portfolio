@@ -3,49 +3,49 @@ import { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { cn } from "@/lib/utils";
 
-// Project data with uploaded designs
+// Project data with uploaded designs and actual live URLs
 const projects = [
   {
     id: 1,
     title: "Bright Blends Logo Design",
     tags: ["Branding", "Logo Design"],
     image: "/lovable-uploads/8e52f3ef-8381-4bec-8809-3f7df13ae6f1.png",
-    liveUrl: "#",
+    liveUrl: "https://www.behance.net/gallery/185805111/Bright-Blends",
   },
   {
     id: 2,
     title: "Bright Blends Wine Glass Logo",
     tags: ["Branding", "Logo Design"],
     image: "/lovable-uploads/32262651-c3ba-4a8a-99a9-61f18582aac0.png",
-    liveUrl: "#",
+    liveUrl: "https://www.behance.net/gallery/185805111/Bright-Blends",
   },
   {
     id: 3,
     title: "Fruit Punch Product Poster",
     tags: ["Product Design", "Print"],
     image: "/lovable-uploads/5d98eea0-5d06-4959-905e-bb65d4806011.png",
-    liveUrl: "#",
+    liveUrl: "https://www.behance.net/gallery/185827997/Fruit-Punch",
   },
   {
     id: 4,
     title: "Lushy Henna Classes Poster",
     tags: ["Poster Design", "Event Promotion"],
     image: "/lovable-uploads/9efc0a4e-c3f7-4bce-81f2-f62412e1f28d.png",
-    liveUrl: "#",
+    liveUrl: "https://www.behance.net/gallery/185828263/Lushy-Henna-Classes",
   },
   {
     id: 5,
     title: "Yemimar's Thrift Heaven Poster",
     tags: ["Fashion", "Promotional Design"],
     image: "/lovable-uploads/b5f3b130-8d1b-4750-845b-515d46658e6b.png",
-    liveUrl: "#",
+    liveUrl: "https://www.behance.net/gallery/185828643/Yemimars-Thrift-Heaven",
   },
   {
     id: 6,
     title: "Spartan Car Logo Design",
     tags: ["Branding", "Logo Design"],
     image: "/lovable-uploads/a3067e14-2a6d-4bf2-b114-b6be1e9cecbb.png",
-    liveUrl: "#",
+    liveUrl: "https://www.behance.net/gallery/185804627/Spartan-Car",
   },
 ];
 
